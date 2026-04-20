@@ -1,7 +1,17 @@
 // ============================================
 // TEORIE - PERSONALPRONOMEN IM NOMINATIV
 // Claudia Toth · Nivel A1
+// Cu player audio la fiecare subtitlu
 // ============================================
+
+// LISTA MP3-URI DE ÎNREGISTRAT (în folder-ul lecției)
+// 1. pp-01-introducere.mp3
+// 2. pp-02-tabelul.mp3
+// 3. pp-03-du-ihr-sie.mp3
+// 4. pp-04-er-sie-es.mp3
+// 5. pp-05-sein-haben.mp3
+// 6. pp-06-capcane.mp3
+// 7. pp-07-strategii.mp3
 
 const theoryHTML = `
     <!-- Sub-secțiune 0: Ce sunt? -->
@@ -11,6 +21,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-0">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-0')" id="btn-audio-0">▶</button>
+                    <audio id="audio-0" preload="none">
+                        <source src="pp-01-introducere.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>Definiție</h4>
                 <p><strong>Personalpronomen</strong> (pronumele personale) sunt cuvinte scurte care <strong>înlocuiesc un nume, o persoană sau un lucru</strong>, ca să nu repetăm mereu același substantiv.</p>
@@ -48,6 +67,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-1">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-1')" id="btn-audio-1">▶</button>
+                    <audio id="audio-1" preload="none">
+                        <source src="pp-02-tabelul.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -88,6 +116,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-2">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-2')" id="btn-audio-2">▶</button>
+                    <audio id="audio-2" preload="none">
+                        <source src="pp-03-du-ihr-sie.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>Regula de aur</h4>
                 <p>În germană există o distincție <strong>strictă</strong> între adresarea informală și cea formală — mai strictă decât în română. Dacă greșești, poți părea nepoliticos.</p>
@@ -148,6 +185,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-3">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-3')" id="btn-audio-3">▶</button>
+                    <audio id="audio-3" preload="none">
+                        <source src="pp-04-er-sie-es.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>Regula: pronumele urmează genul gramatical, nu sexul biologic!</h4>
                 <p>Când înlocuim un <strong>lucru</strong>, pronumele depinde de articolul substantivului:</p>
@@ -196,6 +242,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-4">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-4')" id="btn-audio-4">▶</button>
+                    <audio id="audio-4" preload="none">
+                        <source src="pp-05-sein-haben.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>Fiecare pronume cere o formă verbală proprie</h4>
                 <p>Spre deosebire de engleză (I am, you are, he is...), <strong>germana schimbă verbul la fiecare persoană</strong>. Aici sunt cele două verbe esențiale:</p>
@@ -243,6 +298,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-5">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-5')" id="btn-audio-5">▶</button>
+                    <audio id="audio-5" preload="none">
+                        <source src="pp-06-capcane.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box" style="background: #fee2e2; border-color: #ef4444;">
                 <h4>⚠️ Capcana 1: Pronumele nu se poate omite!</h4>
                 <p>În română putem zice <em>"Sunt Ana"</em> (fără "eu"). În <strong>germana pronumele este obligatoriu</strong>:</p>
@@ -291,6 +355,15 @@ const theoryHTML = `
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-6">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-6')" id="btn-audio-6">▶</button>
+                    <audio id="audio-6" preload="none">
+                        <source src="pp-07-strategii.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>🔑 Cum să memorezi rapid</h4>
                 <ul>
